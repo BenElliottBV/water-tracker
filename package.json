@@ -3,11 +3,14 @@
     "id": "org.nativescript.watertracker",
     "tns-ios": {
       "version": "1.6.0"
+    },
+    "tns-android": {
+      "version": "1.6.3"
     }
   },
   "dependencies": {
     "nativescript-effects": "^0.3.0",
-    "nativescript-firebase": "^0.1.1",
+    "nativescript-plugin-firebase": "^2.0.1",
     "tns-core-modules": "1.6.2"
   }
 }

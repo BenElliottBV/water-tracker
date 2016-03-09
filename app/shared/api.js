@@ -1,4 +1,4 @@
-var firebase = require("nativescript-firebase");
+var firebase = require("nativescript-plugin-firebase");
 var common = require("./common");
 
 var Api = (function(){
@@ -6,7 +6,7 @@ var Api = (function(){
     this.doInit();
   }
 
-  DemoAppModel.prototype.doInit = function () {
+  Api.prototype.doInit = function () {
     firebase.init({
       url: common.apiUrl
     }).then(
@@ -18,6 +18,8 @@ var Api = (function(){
         }
     );
   };
+  
+  return Api;
 
 })();
 
