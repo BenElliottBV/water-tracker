@@ -1,0 +1,15 @@
+<Page loaded="pageLoaded" xmlns="http://schemas.nativescript.org/tns.xsd">
+  <GridLayout rows="*,auto">
+    <StackLayout row="0" verticalAlignment="center">
+      <Image src="~/images/water.png" tap="{{ tapAction }}"/>
+      <StackLayout orientation="horizontal" horizontalAlignment="center">
+        <TextField text="{{ mls }}" keyboardType="number" style="width:50; text-align:right"/>
+        <Label text="ml" />
+      </StackLayout>
+
+
+    </StackLayout>
+    <!-- <Button text="TAP" tap="{{ tapAction }}" /> -->
+    <Label row="1" verticalAlignment="bottom" class="message" text="{{ drinks.length + ' drinks today (' + mls * counter + 'ml)'  }}" textWrap="true"/>
+  </GridLayout>
+</Page>
